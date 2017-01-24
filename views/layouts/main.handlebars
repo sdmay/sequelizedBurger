@@ -34,31 +34,4 @@
 	</div>
 	</div>
 	</body>
-	<script>
-  function handleFormSubmit(event) {
-    event.preventDefault();
-    // Wont submit the post if we are missing a body, title, or author
-    if (!req.body.burger.val().trim()) {
-      return;
-    }
-    // Constructing a newPost object to hand to the database
-    var newPost = {
-      title: req.body.burger
-        .val()
-        .trim()
-    };
-	submitPost(newPost);
-    // If we're updating a post run updatePost to update a post
-    // Otherwise run submitPost to create a whole new post
-    
-  }
-
-  // Submits a new post and brings user to blog page upon completion
-  function submitPost(post) {
-    $.post("/burgers/create", post, function() {
-      window.location.href = "/burgers";
-    });
-  }
-
-	</script>
 </html>

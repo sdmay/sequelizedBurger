@@ -32,15 +32,14 @@ module.exports = function(app) {
 
  app.put("/burgers/update/:id", function(req, res) {
  
-    console.log(req.body.devoured)
-       db.Burger.update(
+        db.Burger.update(
           { devoured:  1
           
            },
 
        {
          where: {
-        id: req.body.id
+        id: req.params.id
       }
     })
     .then(function(dbBurger) {
