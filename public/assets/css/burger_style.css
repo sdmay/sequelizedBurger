@@ -1,0 +1,54 @@
+.burger{
+    font-family: 'Monoton', cursive;
+    text-align: center;
+}
+
+.inline{display: inline;
+position: relative;
+        }
+
+.words{
+    font-family: 'Trocchi', serif;
+    text-align: center;
+ 
+}
+
+.createbutton {
+       background-color: #36b733;
+        border-color: #fa1db8;
+}
+.createbutton:hover, .createbutton:focus, .createbutton:active, .createbutton.active {
+    color: #fff;
+    background-color: black;
+    border-color: red /*set the color you want here*/
+}
+
+.answer{
+    font-family: 'Gravitas One', cursive;
+    text-align: center;
+    background-color: #e8f947;
+    
+}
+
+.center{
+    text-align: center;
+}
+
+.burgerpic{
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+.clear{clear: both;}
+
+.coloring{
+    background-color: #e0da5b;
+}
