@@ -30,7 +30,7 @@ module.exports = function(app) {
     });
   });
 
- app.put("/burgers/update/:id", function(req, res) {
+ app.put("/burgers/update/", function(req, res) {
  
         db.Burger.update(
           { devoured:  1
@@ -39,7 +39,7 @@ module.exports = function(app) {
 
        {
          where: {
-        id: req.params.id
+        id: req.body.id
       }
     })
     .then(function(dbBurger) {
